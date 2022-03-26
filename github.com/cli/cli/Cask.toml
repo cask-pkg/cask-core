@@ -1,0 +1,19 @@
+[package]
+name = "github.com/cli/cli"
+bin = "gh"
+authors = ["Github <opensource@github.com>"]
+keywords = ["git", "cli", "golang", "github-api-v4"]
+repository = "https://github.com/cli/cli"
+description = """
+GitHub’s official command line tool
+"""
+
+[darwin]
+x86_64 = { url = "https://github.com/cli/cli/releases/download/v{version}/gh_{version}_macOS_amd64.tar.gz", path = "/gh_{version}_macOS_amd64/bin" }
+
+[windows]
+x86_64 = { url = "https://github.com/cli/cli/releases/download/v{version}/gh_{version}_windows_amd64.zip", path = "/gh_{version}_windows_amd64/bin" }
+
+[linux]
+x86_64 = { url = "https://github.com/cli/cli/releases/download/v{version}/gh_{version}_linux_adm64.tar.gz", path = "/gh_{version}_linux_amd64/bin" }
+aarch64 = { url = "https://github.com/cli/cli/releases/download/v{version}/gh_{version}_linux_arm64.tar.gz", path = "/gh_{version}_linux_arm64/bin" }
