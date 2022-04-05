@@ -9,12 +9,12 @@ Fast linters Runner for Go
 """
 
 [darwin]
-x86_64 = { url = "https://github.com/golangci/golangci-lint/releases/download/v{version}/golangci-lint-{version}-darwin-amd64.tar.gz", path = "/golangci-lint-{version}-darwin-amd64" }
-aarch64 = { url = "https://github.com/golangci/golangci-lint/releases/download/v{version}/golangci-lint-{version}-darwin-arm64.tar.gz", path = "/golangci-lint-{version}-darwin-arm64" }
+x86_64 = { url = "{package.repository}/releases/download/v{version}/golangci-lint-{version}-darwin-amd64.tar.gz", path = "/golangci-lint-{version}-darwin-amd64" }
+aarch64 = { url = "{package.repository}/releases/download/v{version}/golangci-lint-{version}-darwin-arm64.tar.gz", path = "/golangci-lint-{version}-darwin-arm64" }
 
 [windows]
-x86_64 = { url = "https://github.com/golangci/golangci-lint/releases/download/v{version}/golangci-lint-{version}-windows-amd64.tar.gz", path = "/golangci-lint-{version}-windows-amd64" }
+x86_64 = { url = "{package.repository}/releases/download/v{version}/golangci-lint-{version}-windows-amd64.tar.gz", path = "/golangci-lint-{version}-windows-amd64" }
 
 [linux]
-x86_64 = { url = "https://github.com/golangci/golangci-lint/releases/download/v{version}/golangci-lint-{version}-linux-amd64.tar.gz", path = "/golangci-lint-{version}-linux-amd64" }
-aarch64 = { url = "https://github.com/golangci/golangci-lint/releases/download/v{version}/golangci-lint-{version}-linux-arm64.tar.gz", path = "/golangci-lint-{version}-linux-arm64" }
+x86_64 = { url = "{package.repository}/releases/download/v{version}/golangci-lint-{version}-linux-amd64.tar.gz", path = "/golangci-lint-{version}-linux-amd64" }
+aarch64 = { url = "{package.repository}/releases/download/v{version}/golangci-lint-{version}-linux-arm64.tar.gz", path = "/golangci-lint-{version}-linux-arm64" }
