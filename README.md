@@ -7,7 +7,7 @@ fell free to add your package with following step:
 2. Clone
 
    ```bash
-   git clone https://github.com/<your user name>/cask-core.git
+   git clone https://github.com/<username>/cask-core.git
    ```
 
 3. Add your package folder
