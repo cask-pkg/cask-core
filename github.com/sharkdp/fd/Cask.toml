@@ -1,0 +1,22 @@
+[package]
+name = "github.com/sharkdp/fd"
+bin = "fd"
+repository = "https://github.com/sharkdp/fd"
+description = """
+A simple, fast and user-friendly alternative to 'find'
+"""
+
+[darwin]
+x86_64 = "{package.repository}/releases/download/v{version}/fd-v{version}-x86_64-apple-darwin.tar.gz"
+aarch64 = "{package.repository}/releases/download/v{version}/fd-v{version}-x86_64-apple-darwin.tar.gz"
+
+[windows]
+x86 = "{package.repository}/releases/download/v{version}/fd-v{version}-i686-pc-windows-msvc.zip"
+x86_64 = "{package.repository}/releases/download/v{version}/fd-v{version}-x86_64-pc-windows-msvc.zip"
+
+[linux]
+x86 = "{package.repository}/releases/download/v{version}/fd-v{version}-i686-unknown-linux-musl.tar.gz"
+arm = "{package.repository}/releases/download/v{version}/fd-v{version}-arm-unknown-linux-musleabihf.tar.gz"
+armv7 = "{package.repository}/releases/download/v{version}/fd-v{version}-arm-unknown-linux-musleabihf.tar.gz"
+x86_64 = "{package.repository}/releases/download/v{version}/fd-v{version}-x86_64-unknown-linux-gnu.tar.gz"
+aarch64 = "{package.repository}/releases/download/v{version}/fd-v{version}-aarch64-unknown-linux-gnu.tar.gz"
