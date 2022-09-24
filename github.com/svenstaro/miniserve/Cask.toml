@@ -15,7 +15,33 @@ x86_64 = { executable = "{package.repository}/releases/download/{version}/minise
 
 [linux]
 x86_64 = { executable = "{package.repository}/releases/download/{version}/miniserve-{version}-x86_64-unknown-linux-musl"}
-arm = { executable = "{package.repository}/releases/download/{version}/miniserve-{version}-arm-unknown-linux-musleabihf"}
+arm = { executable = "{package.repository}/releases/download/{version}/minise[package]
+name = "github.com/svenstaro/miniserve"
+bin = "miniserve"
+repository = "https://github.com/svenstaro/miniserve"
+description = """
+🌟 For when you really just want to serve some files over HTTP right now!
+"""
+
+[darwin]
+x86_64 = { executable = "{package.repository}/releases/download/v{version}/miniserve-{version}-x86_64-apple-darwin"}
+aarch64 = { executable = "{package.repository}/releases/download/v{version}/miniserve-{version}-aarch64-apple-darwin"}
+
+[windows]
+x86_64 = { executable = "{package.repository}/releases/download/v{version}/miniserve-{version}-x86_64-pc-windows-msvc.exe"}
+
+[linux]
+x86_64 = { executable = "{package.repository}/releases/download/v{version}/miniserve-{version}-x86_64-unknown-linux-musl"}
+arm = { executable = "{package.repository}/releases/download/v{version}/miniserve-{version}-arm-unknown-linux-musleabihf"}
+armv7 = { executable = "{package.repository}/releases/download/v{version}/miniserve-{version}-armv7-unknown-linux-musleabihf"}
+aarch64 = { executable = "{package.repository}/releases/download/v{version}/miniserve-{version}-aarch64-unknown-linux-musl"}
+mips = { executable = "{package.repository}/releases/download/v{version}/miniserve-{version}-mips-unknown-linux-musl"}
+mips64 = { executable = "{package.repository}/releases/download/v{version}/miniserve-{version}-mips64-unknown-linux-gnuabi64"}
+mips64el = { executable = "{package.repository}/releases/download/v{version}/miniserve-{version}-mips64el-unknown-linux-gnuabi64"}
+riscv64 = { executable = "{package.repository}/releases/download/v{version}/miniserve-{version}-riscv64gc-unknown-linux-gnu"}
+
+[freebsd]
+x86_64 = { executable = "{package.repository}/releases/download/v{version}/miniserve-{version}-x86_64-unknown-freebsd" }rve-{version}-arm-unknown-linux-musleabihf"}
 armv7 = { executable = "{package.repository}/releases/download/{version}/miniserve-{version}-armv7-unknown-linux-musleabihf"}
 aarch64 = { executable = "{package.repository}/releases/download/{version}/miniserve-{version}-aarch64-unknown-linux-musl"}
 mips = { executable = "{package.repository}/releases/download/{version}/miniserve-{version}-mips-unknown-linux-musl"}
