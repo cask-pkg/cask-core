@@ -1,0 +1,20 @@
+[package]
+name = "github.com/Schniz/fnm"
+bin = "fnm"
+authors = ["Gal Schlezinger <gal@spitfire.co.il>"]
+keywords = []
+repository = "https://github.com/Schniz/fnm"
+description = """
+🚀 Fast and simple Node.js version manager, built in Rust
+"""
+
+[darwin]
+x86_64 = { url = "{package.repository}/releases/download/v{version}/{package.bin}-macos.zip" }
+
+[windows]
+x86_64 = { url = "{package.repository}/releases/download/v{version}/{package.bin}-windows.zip" }
+
+[linux]
+x86_64 = { url = "{package.repository}/releases/download/v{version}/{package.bin}-linux.zip" }
+aarch64 = { url = "{package.repository}/releases/download/v{version}/{package.bin}-arm64.zip" }
+armv7 = { url = "{package.repository}/releases/download/v{version}/{package.bin}-arm32.zip" }
