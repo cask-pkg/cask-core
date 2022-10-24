@@ -1,0 +1,21 @@
+[package]
+name = "github.com/goreleaser/goreleaser"
+bin = "goreleaser"
+authors = []
+keywords = ["go", "package"]
+repository = "https://github.com/goreleaser/goreleaser"
+description = """
+Deliver Go binaries as fast and easily as possible
+"""
+
+[darwin]
+x86_64 = "{package.repository}/releases/download/v{version}/goreleaser_Darwin_x86_64.tar.gz"
+aarch64 = "{package.repository}/releases/download/v{version}/goreleaser_Darwin_arm64.tar.gz"
+
+[windows]
+x86_64 = "{package.repository}/releases/download/v{version}/goreleaser_Windows_x86_64.tar.gz"
+aarch64 = "{package.repository}/releases/download/v{version}/goreleaser_Windows_arm64.tar.gz"
+
+[linux]
+x86_64 = "{package.repository}/releases/download/v{version}/goreleaser_Linux_x86_64.tar.gz"
+aarch64 = "{package.repository}/releases/download/v{version}/goreleaser_Linux_arm64.tar.gz"
