@@ -1,0 +1,18 @@
+[package]
+name = "github.com/axetroy/s4"
+bin = "s4"
+authors = ["Axetroy <axetroy.dev@gmail.com>"]
+keywords = []
+repository = "https://github.com/axetroy/s4"
+description = """
+集成本地/远程的工作流 Integrate local and remote workflow
+"""
+
+[darwin]
+x86_64 = "{package.repository}/releases/download/v{version}/{package.bin}_darwin_amd64.tar.gz"
+
+[windows]
+x86_64 = "{package.repository}/releases/download/v{version}/{package.bin}_windows_amd64.tar.gz"
+
+[linux]
+x86_64 = "{package.repository}/releases/download/v{version}/{package.bin}_linux_amd64.tar.gz"
