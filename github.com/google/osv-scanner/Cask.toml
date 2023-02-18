@@ -1,0 +1,21 @@
+[package]
+name = "github.com/google/osv-scanner"
+bin = "osv-scanner"
+authors = ["Google <opensource@google.com>"]
+keywords = ["security-audit", "scanner", "security-tools", "vulnerability-scanner"]
+repository = "https://github.com/google/osv-scanner"
+description = """
+Vulnerability scanner written in Go which uses the data provided by https://osv.dev
+"""
+
+[darwin]
+x86_64 = { executable = "{package.repository}/releases/download/v{version}/osv-scanner_{verion}_darwin_amd64" }
+aarch64 = { executable = "{package.repository}/releases/download/v{version}/osv-scanner_{verion}_darwin_arm64" }
+
+[windows]
+x86_64 = { executable = "{package.repository}/releases/download/v{version}/osv-scanner_{verion}_windows_amd64" }
+aarch64 = { executable = "{package.repository}/releases/download/v{version}/osv-scanner_{verion}_windows_arm64" }
+
+[linux]
+x86_64 = { executable = "{package.repository}/releases/download/v{version}/osv-scanner_{verion}_linux_amd64" }
+aarch64 = { executable = "{package.repository}/releases/download/v{version}/osv-scanner_{verion}_linux_arm64" }
