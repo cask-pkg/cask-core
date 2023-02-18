@@ -1,0 +1,22 @@
+[package]
+name = "github.com/FiloSottile/mkcert"
+bin = "mkcert"
+authors = ["Filippo Valsorda"]
+keywords = []
+repository = "https://github.com/FiloSottile/mkcert"
+description = """
+A simple zero-config tool to make locally trusted development certificates with any names you'd like.
+"""
+
+[darwin]
+x86_64 = { executable = "{package.repository}/releases/download/v{version}/mkcert-v{version}-darwin-amd64" }
+aarch64 = { executable = "{package.repository}/releases/download/v{version}/mkcert-v{version}-darwin-arm64" }
+
+[windows]
+386 = { executable = "{package.repository}/releases/download/v{version}/mkcert-v{version}-windows-amd64.exe" }
+x86_64 = { executable = "{package.repository}/releases/download/v{version}/mkcert-v{version}-windows-arm64.exe" }
+
+[linux]
+armv7 = { executable = "{package.repository}/releases/download/v{version}/mkcert-v{version}-linux-arm" }
+x86_64 = { executable = "{package.repository}/releases/download/v{version}/mkcert-v{version}-linux-amd64" }
+arm64 = { executable = "{package.repository}/releases/download/v{version}/mkcert-v{version}-linux-arm64" }
