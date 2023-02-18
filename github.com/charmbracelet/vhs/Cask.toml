@@ -1,0 +1,23 @@
+[package]
+name = "github.com/charmbracelet/vhs"
+bin = "vhs"
+authors = ["Charm <vt100@charm.sh>"]
+keywords = []
+repository = "https://github.com/charmbracelet/vhs"
+description = """
+Your CLI home video recorder 📼
+"""
+
+[darwin]
+x86_64 = { url = "{package.repository}/releases/download/v{version}/vhs_{version}_Darwin_x86_64.tar.gz", path = "/vhs_{version}_Darwin_x86_64" }
+aarch64 = { url = "{package.repository}/releases/download/v{version}/vhs_{version}_Darwin_arm64.tar.gz", path = "/vhs_{version}_Darwin_arm64" }
+
+[windows]
+386 = { url = "{package.repository}/releases/download/v{version}/vhs_{version}_Windows_i386.zip", path = "/vhs_{version}_Windows_i386" }
+x86_64 = { url = "{package.repository}/releases/download/v{version}/vhs_{version}_Windows_x86_64.zip", path = "/vhs_{version}_Windows_x86_64" }
+
+[linux]
+386 = { url = "{package.repository}/releases/download/v{version}/vhs_{version}_Linux_i386.tar.gz", path = "/vhs_{version}_Linux_i386" }
+armv7 = { url = "{package.repository}/releases/download/v{version}/vhs_{version}_Linux_armv7.tar.gz", path = "/vhs_{version}_Linux_armv7" }
+x86_64 = { url = "{package.repository}/releases/download/v{version}/vhs_{version}_Linux_x86_64.tar.gz", path = "/vhs_{version}_Linux_x86_64" }
+arm64 = { url = "{package.repository}/releases/download/v{version}/vhs_{version}_Linux_arm64.tar.gz", path = "/vhs_{version}_Linux_arm64" }
