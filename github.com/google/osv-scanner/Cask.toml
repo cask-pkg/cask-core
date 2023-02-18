@@ -9,13 +9,13 @@ Vulnerability scanner written in Go which uses the data provided by https://osv.
 """
 
 [darwin]
-x86_64 = { executable = "{package.repository}/releases/download/v{version}/osv-scanner_{verion}_darwin_amd64" }
-aarch64 = { executable = "{package.repository}/releases/download/v{version}/osv-scanner_{verion}_darwin_arm64" }
+x86_64 = { executable = "{package.repository}/releases/download/v{version}/osv-scanner_{version}_darwin_amd64" }
+aarch64 = { executable = "{package.repository}/releases/download/v{version}/osv-scanner_{version}_darwin_arm64" }
 
 [windows]
-x86_64 = { executable = "{package.repository}/releases/download/v{version}/osv-scanner_{verion}_windows_amd64.exe" }
-aarch64 = { executable = "{package.repository}/releases/download/v{version}/osv-scanner_{verion}_windows_arm64.exe" }
+x86_64 = { executable = "{package.repository}/releases/download/v{version}/osv-scanner_{version}_windows_amd64.exe" }
+aarch64 = { executable = "{package.repository}/releases/download/v{version}/osv-scanner_{version}_windows_arm64.exe" }
 
 [linux]
-x86_64 = { executable = "{package.repository}/releases/download/v{version}/osv-scanner_{verion}_linux_amd64" }
-aarch64 = { executable = "{package.repository}/releases/download/v{version}/osv-scanner_{verion}_linux_arm64" }
+x86_64 = { executable = "{package.repository}/releases/download/v{version}/osv-scanner_{version}_linux_amd64" }
+aarch64 = { executable = "{package.repository}/releases/download/v{version}/osv-scanner_{version}_linux_arm64" }
