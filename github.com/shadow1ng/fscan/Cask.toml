@@ -3,7 +3,7 @@ name = "github.com/shadow1ng/fscan"
 bin = "fscan"
 authors = ["shadow1ng <shadow1ng@qq.com>"]
 keywords = []
-repository = "https://github.com/google/osv-scanner"
+repository = "https://github.com/shadow1ng/fscan"
 description = """
 一款内网综合扫描工具，方便一键自动化、全方位漏扫扫描。
 """
