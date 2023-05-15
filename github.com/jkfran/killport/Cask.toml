@@ -3,6 +3,7 @@ name = "github.com/jkfran/killport"
 bin = "killport"
 authors = ["Francisco Jimenez Cabrera <jkfran@gmail.com>"]
 keywords = ["cli", "port", "process", "kill", "linux"]
+repository = "https://github.com/jkfran/killport"
 description = """
 A command-line tool to easily kill processes running on a specified port.
 """
