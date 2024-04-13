@@ -1,0 +1,21 @@
+[package]
+name = "github.com/axetroy/virtual-node-env"
+bin = "virtual-node-env"
+authors = ["Axetroy <axetroy.dev@gmail.com>"]
+keywords = []
+repository = "https://github.com/axetroy/virtual-node-env"
+description = """
+A virtual node environment for node.js
+"""
+
+[darwin]
+x86_64 = "{package.repository}/releases/download/v{version}/{package.bin}_darwin_amd64.tar.gz"
+aarch64 = "{package.repository}/releases/download/v{version}/{package.bin}_darwin_arm64.tar.gz"
+
+[windows]
+x86_64 = "{package.repository}/releases/download/v{version}/{package.bin}_windows_amd64.tar.gz"
+aarch64 = "{package.repository}/releases/download/v{version}/{package.bin}_windows_arm64.tar.gz"
+
+[linux]
+x86_64 = "{package.repository}/releases/download/v{version}/{package.bin}_linux_amd64.tar.gz"
+aarch64 = "{package.repository}/releases/download/v{version}/{package.bin}_linux_arm64.tar.gz"
